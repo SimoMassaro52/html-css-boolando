@@ -10,7 +10,6 @@ body{
 
 .bigbox{
     margin: 2% 10%;
-    height: 1100px;
 }
 
 .bigbox::after , .upperrow::after, .lowerrow::after{   
@@ -21,7 +20,6 @@ body{
 
 .upperrow, .lowerrow{
     margin-bottom: 40px;
-    height: 516px;
 }       
 
 .up-left, .up-mid, .up-right, .down-left, .down-mid, .down-right {
@@ -38,6 +36,8 @@ body{
     background-size: cover;
     position: relative;
 }
+
+/*foto*/
 
 .a1{
     background-image: url(images/1.webp)
@@ -63,9 +63,35 @@ body{
     background-image: url(images/6.webp);
 }
 
+/* funzione hover*/
+
+.a1:hover{
+    background-image: url(images/1b.webp);
+}
+
+.a2:hover{
+    background-image: url(images/2b.webp);
+}
+
+.a3:hover{
+    background-image: url(images/3b.webp);
+}
+
+.b1:hover{
+    background-image: url(images/4b.webp);
+}
+
+.b2:hover{
+    background-image: url(images/5b.webp);
+}
+
+.b3:hover{
+    background-image: url(images/6b.webp);
+}
+
+/*etichette*/
 
 #favorite{
-    height: 35px;
     width: 35px;
     line-height: 35px;
     background-color: white;
@@ -73,9 +99,16 @@ body{
     right: 0px;
     top: 15px;
     text-align: center;
-    display: inline-block;
     font-size: 21px;
 }
+
+/*piccolo esperimento con hover per vedere se le precedenti regole vengono considerate o no*/
+
+#favorite:hover{
+    font-size: 35px;
+    color: #eb0037;
+}
+
 
 .labels{
     position: absolute;
@@ -84,23 +117,26 @@ body{
     font-size: 10px;
     color: white;
     font-weight: 700;
+    text-align: center;
+    line-height: 20px;
 }
 
 .labels > .sale{
     width: 35px;
-    line-height: 20px;
     background-color: #eb0037;
-    text-align: center;
-    display: inline-block;
+
 }
 
 .labels > .eco{
     width: 70px;
-    line-height: 20px;
     background-color:#168f67 ;
-    text-align: center;
+}
+
+.labels > *{
     display: inline-block;
 }
+
+/*descrizioni articolo*/
 
 .description{
     padding-top: 10px;
@@ -119,3 +155,4 @@ p span{
      color: black;
      text-decoration: line-through; 
 }
+
