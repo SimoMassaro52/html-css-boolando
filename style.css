@@ -3,3 +3,119 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bigbox{
+    margin: 2% 10%;
+    height: 1100px;
+}
+
+.bigbox::after , .upperrow::after, .lowerrow::after{   
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.upperrow, .lowerrow{
+    margin-bottom: 40px;
+    height: 516px;
+}       
+
+.up-left, .up-mid, .up-right, .down-left, .down-mid, .down-right {
+   float: left;
+}
+
+.up-mid, .down-mid{
+    padding: 0 15px;
+}
+
+#pic{
+    height: 462px;
+    width: 320px;
+    background-size: cover;
+    position: relative;
+}
+
+.a1{
+    background-image: url(images/1.webp)
+}
+
+.a2{
+    background-image: url(images/2.webp);
+}
+
+.a3{
+    background-image: url(images/3.webp);
+}
+
+.b1{
+    background-image: url(images/4.webp);
+}
+
+.b2{
+    background-image: url(images/5.webp);
+}
+
+.b3{
+    background-image: url(images/6.webp);
+}
+
+
+#favorite{
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 21px;
+}
+
+.labels{
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+    font-size: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+.labels > .sale{
+    width: 35px;
+    line-height: 20px;
+    background-color: #eb0037;
+    text-align: center;
+    display: inline-block;
+}
+
+.labels > .eco{
+    width: 70px;
+    line-height: 20px;
+    background-color:#168f67 ;
+    text-align: center;
+    display: inline-block;
+}
+
+.description{
+    padding-top: 10px;
+}
+
+.description span, .description p{
+  font-size: 11px;
+}
+
+.description p{
+    color: #eb0037;
+    font-weight: 700;
+}
+
+p span{
+     color: black;
+     text-decoration: line-through; 
+}
